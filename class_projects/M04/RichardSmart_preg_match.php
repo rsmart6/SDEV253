@@ -1,10 +1,10 @@
 
 <?php
-//removes everything before sdev
+//removes everything after .net
 $site = "http://www.sdev253.net/home.html";
 preg_match('@^(?:http://)?([^/]+)@i',"$site", $matches);
 $sitetwo = $matches[1];
-//removes everything after .net
+//removes everything before sdev
 preg_match('/[^.]+\.[^.]+$/', $sitetwo, $matches);
 //displat site address as original
 echo "site address is: $site <br />";
