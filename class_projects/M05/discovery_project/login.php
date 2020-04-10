@@ -1,6 +1,5 @@
 <?php
  require_once('bookmark_fns.php');
- require_once('output_fns.php');
  do_html_header('');
 
  display_site_info(); 
@@ -8,4 +7,3 @@
 
  do_html_footer();
 ?>
-

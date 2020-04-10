@@ -273,3 +273,5 @@ function display_recommended_urls($url_array) {
   </table>
 <?php
 }
+
+?>
