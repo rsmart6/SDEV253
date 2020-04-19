@@ -10,10 +10,10 @@ function register($username, $email, $password) {
   $conn = db_connect();
 
   // check if username is unique
-  $result = $conn->query("select * from user where username='".$username."'");
-  if (!$result) {
-    throw new Exception('Could not execute query');
-  }
+// $result = $conn->query("select * from user where username='".$username."'");
+ // if (!$result) {
+ //   throw new Exception('Could not execute query');
+ // }
 
   if ($result->num_rows>0) {
     throw new Exception('That username is taken - go back and choose another one.');
@@ -22,9 +22,9 @@ function register($username, $email, $password) {
   // if ok, put in db
   $result = $conn->query("insert into user values
                          ('".$username."', sha1('".$password."'), '".$email."')");
-  if (!$result) {
-    throw new Exception('Could not register you in database - please try again later.');
-  }
+//  if (!$result) {
+ //   throw new Exception('Could not register you in database - please try again later.');
+//  }
 
   return true;
 }

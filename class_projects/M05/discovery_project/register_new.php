@@ -2,6 +2,7 @@
   // include function files for this application
   require_once('bookmark_fns.php');
 
+
   //create short variable names
   $email=$_POST['email'];
   $username=$_POST['username'];
